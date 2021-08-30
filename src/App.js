@@ -1,13 +1,13 @@
 import React from 'react';
-// import ToDoAppMain from './component/question-1/ToDoApp.main';
-import PaginationComponent from './component/question-2/Pagination.component';
+import ToDoAppMain from './component/question-1/ToDoApp.main';
+// import PaginationComponent from './component/question-2/Pagination.component';
 
 const App = () => {
   return (
     <div>
-     {/* <ToDoAppMain/> */}
+     <ToDoAppMain/>
      <br /> <br />
-     <PaginationComponent />
+     {/* <PaginationComponent /> */}
     </div>
   )
 }

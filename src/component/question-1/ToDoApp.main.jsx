@@ -35,7 +35,7 @@ const ToDoAppMain = () => {
         }
        
     }
-
+    
     const saveEdit = (text, index) => {
         if (window.confirm("You want to update ?")) {
             let duplicateArray = [...toDoListItems];
@@ -72,6 +72,11 @@ const ToDoAppMain = () => {
                             value={toDoItem}
                             fullWidth
                             margin="dense"
+                            onKeyPress={(e) => {
+                                if (e.charCode === 13) {
+                                    toDoPush(e.target.value)
+                                }
+                              }}
                             variant="outlined"
                             placeholder="Enter Task..."
                             label="Enter To Do Name"
